@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, viewport-fit=cover, user-scalable=no">
+
+  <link rel="apple-touch-icon" type="image/jpg" sizes="512x512" href="images/FrejaIcon.png">
+  <link rel="apple-touch-startup-image" href="images/FrejaIcon.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="manifest" href="%frejaeid-b8dca.web.app%/manifest.json">
+
+  <!--<audio src="./audio/frejaklick1.mp3" id="f1"></audio>
+    <audio src="./audio/frejaklick2.mp3" id="f2"></audio>
+    <audio src="./audio/frejaklick3.mp3" id="f3"></audio> -->
+  <title>Freja</title>
+</head>
+
+<body style="-webkit-user-select: none;">
+  <div class="content" id="contentIndex">
+    <div class="headText">
+      <a class="iconLeftLink" href="startup.html"><img class="iconLeft" src="images/angle-left (1).png" alt=""></a>
+      <div class="transparent3"></div>
+      <img class="logoImg" src="images/LogoWebsiteMenu.png" alt="">
+      <p class="plus">+</p>
+      <img src="images/freja_circle_dots.png" class="iconRight">
+    </div>
+
+    <div class="particle" style="position: absolute; margin-top: 10px; z-index: 1;">
+      <div style="height: 375px; width: 100vw;" id="particles-js"></div>
+    </div>
+    <div onclick="playParticleSound()" id="particlesClick"></div>
+
+    <div class="faceContent">
+      <div class="transparent"></div>
+      <img class="spinImg" src="images/user-avatar-background.png" alt="">
+      <img id="imageDisplay" src="" loading="lazy">
+    </div>
+
+    <div class="personalText" id="personalText">
+      <p>Giltigt t o m: <span style="font-weight: 700;">2028-03-16</span></p>
+      <p>Efternamn: <span id="lastname-Data" style="font-weight: 700;"></span></p>
+      <p>Namn: <span id="name-Data" style="font-weight: 700;"></span></p>
+      <p>Ålder: <span id="age-Data" style="font-weight: 700;"></span></p>
+    </div>
+    <div class="panelContentParent">
+      <div class="panelContent" id="panelContent">
+        <div class="textContentPanel">
+          <div class="textContent">
+            <p class="textContentPanel1">Tid</p>
+            <p id="currentTime" class="textContentPanel2">14:17:23</p>
+          </div>
+          <div class="textContent" style="margin-left: 10px;">
+            <p class="textContentPanel1">Datum</p>
+            <p id="currentDate" class="textContentPanel2">21 Nov</p>
+          </div>
+          <div class="textContent" style="margin-left: 10px;">
+            <p class="textContentPanel1">Giltig i</p>
+            <p id="countdownTimer" class="textContentPanel2">120 <span style="font-weight: 400; font-size: 3.5vw;"
+                id="countdownSpan"> sek</span></p>
+          </div>
+        </div>
+        <div class="qrPanel">
+          <div class="transparent2"></div>
+          <img src="images/qr.jpg" alt="" class="qrCode">
+          <div class="qrCodeText">
+            <p>Personnummer: <span id="fullage-Data" style="font-weight: 700;"></span></p>
+          </div>
+        </div>
+        <div class="checkIdText">
+          <p>Kolla ID på: kontroll.frejaeid.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('load', function () {
+      function handleScroll() {
+        if (window.innerHeight >= 844) {
+          // Disable scrolling
+          document.addEventListener('touchmove', preventDefaultScroll, {passive: false});
+        } else {
+          // Enable scrolling
+          document.removeEventListener('touchmove', preventDefaultScroll, {passive: false});
+        }
+      }
+      function preventDefaultScroll(event) {
+        event.preventDefault();
+      }
+      handleScroll(); // Call the function initially
+      window.addEventListener('resize', handleScroll); // Add event listener for window resize
+    });
+  </script>
+  <script src="scripts/particles.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/particlesClicked.js"></script>
+  <script src="scripts/userFunctions.js"></script>
+</body>
+
+</html>
