@@ -1,0 +1,101 @@
+/*startup*/
+
+body{
+    overflow: hidden;
+    background: linear-gradient(#3B3E98, #1681D3);
+}
+
+.content2{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#3B3E98, #1681D3);
+
+}
+
+.inputFormContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+}
+
+.formContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+}
+
+.formContent input{
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    max-width: 390px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.btn1{
+    cursor: pointer;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    max-width: 390px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.updateAgeContent{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.updateAgeContent button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.socialContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    position: absolute;
+    bottom: 50px;
+    color: white;
+}
+
+#logout{
+    width: 100%;
+    color: white;
+    background-color: #3B3E98;
+    position: absolute;
+
+}
