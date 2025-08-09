@@ -1,0 +1,6 @@
+{
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "start_url": "/startup.html",
+    "short_name": "Freja"
+}
